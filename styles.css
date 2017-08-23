@@ -1,11 +1,59 @@
 body {
-	background-color: black;
+	/* Potential Colors:
+	 * SlateGray - #374049
+ 	 * LightSlateGray
+ 	 * DimGray
+ 	 */
+ 	 background-color: #374049;
+
 }
-h1 {
+/* index.html attributes */
+.name-text {
 	color: white;
+	font-family: 'Oxygen Mono', monospace;
+	font-size: 250%;
+	padding-top: 300px;
+	padding-bottom: 20px;
 	text-align: center;
 }
-p {
+.link-container {
+	text-align: center;
+	font-size: 150%;
+}
+.about-link {
+	color: #64FF91;
+}
+.projects-link {
+	color: #FF71FF;
+}
+
+.resume-link {
+	color: #FFFD71;
+}
+
+/* about.html attributes */
+.about-title {
 	color: white;
+	font-size 150%;
+	font-family: 'Oxygen Mono', monospace;
+	padding-top: 25px;
 	text-align: center;
 }
+.about-text {
+	color: white;
+	margin-top:10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.line {
+	display: block;
+	width: 100%;
+	background: white;
+	height: 2px;
+	margin: auto;
+}
+
+/* projects.html attributes */
+/*.about-text:hover, .projects-text:hover, .resume-text:hover {
+	box-shadow: 0 0 30px gray;
+} Box shadows for project images */
