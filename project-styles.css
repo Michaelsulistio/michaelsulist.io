@@ -1,0 +1,61 @@
+body {
+	background-color: #EFFFFF;
+}
+.top-title {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 200%;
+	text-align: center;
+	margin: 30px;
+	padding-top: 50px;
+}
+.description-block {
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+.description-text {
+	font-size: 95%;
+	font-family: 'Raleway', sans-serif;
+}
+.display-icon {
+	display: block;
+	width: 50px;
+}
+.phone-ss-img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 250px;
+}
+.display-img {
+
+	width: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom:25px;
+
+}
+.home-bar {
+	width: max-width;
+	height: 30px;
+	background: black;
+	opacity: 25%;
+}
+/**************
+ *  FSB page  *
+ **************/
+.action-title {
+	text-align: center;
+	font-size: 160%;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:50px;
+
+}
+#img-text {
+	padding-bottom: 25px;
+}
+#fsb-intro-text {
+	text-align: left;
+}
+#fsb-action-block {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 90%;
+}
