@@ -10,35 +10,127 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
 
 
-    <title> A Personal Portfolio Website</title>
+    <title>Home</title>
 
   </head>
   <body>
-	<div class="name-text">
-		<span class="name"> michael sulistio </span>
-	</div>
-	<div class="link-container">
-		<div class="container">
+  	<div id="intro-block">
+		<div class="name-text">
+			<span class="name">michael sulistio</span>
+		</div>
+		<div class="container" id="link-container">
 			<div class="row">
 				<div class="col-lg-4">
-					<a href="about.html"><span class="about-link"> { about me } </span></a>
+					<a id="about-link" href="#"><span> { about me } </span></a>
 				</div>
 				<div class="col-lg-4">
-					<a href="projects.html"><span class="projects-link"> { projects } </span></a>
+					<a id="projects-link" href="#"><span> { projects } </span></a>
 				</div>
 				<div class="col-lg-4">
-		    		<a href="resume.hmtl"> <span class="resume-link"> { resume } </span></a>
+		    		<a id="contact-link" href="#"> <span> { contact } </span></a>
 		    	</div>
 		    </div>
 	    </div>
+    </div>
+
+    <div id="about-block">
+	    <div class="container-fluid">
+	  		<div class="row">
+		  		<div class="col-lg-3">
+			  	</div>
+			  	<div class="col-lg-6" id="main-col">
+			  		<div class="about-title">
+			  			about me
+			  		</div>
+				  	<div class="about-text">
+						Hi! I'm a software engineering student at the University of Washington studying Computer Science.
+						I enjoy working on backend infrastructure/systems, with a special interest in financial trading 
+						software.
+						<br> <br>
+						This past summer, I worked at RetailMeNot in Austin, TX where I worked in the core
+						web development team. At UW, I worked as an undergraduate teaching assistant for the 
+						CSE 14X introductory courses teaching students topics from basic Java syntax to data structures
+						<br> <br>
+					  	This upcoming summer, I will be interning at Facebook in Seattle, WA! In my free
+					  	time I enjoy playing badminton, working out, and coding personal projects -- one of these 
+					  	projects being this website!
+				  	</div>
+			  	</div>
+	        <div class="col-lg-3">
+	        </div>
+			</div>
+		</div>
 	</div>
+
+	<div id="projects-block">
+		<div class="container-fluid">
+			<div id="projects-title">projects</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="project-text">
+						<a href="fsb.html"><div class="project-title"><u>Flashcard Study Buddy</u></div></a>
+						<i>A voice-interactive learning tool for Google Assistant platforms.</i>
+					</div>
+					<div class="project-text">
+						<div class="project-title"><u>michaelsulist.io</u></div>
+						<i>A personal portfolio website.</i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact-block">
+		<div class="container-fluid">
+			<div id="contact-title">contact</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="contact-text">
+						(Looking for Fall 2019 Internships!)
+						<br>
+						Email me at mikesulistio@gmail.com
+					</div>
+					<a class="contact-links" href="resume.pdf">{ resume }</a><br>
+					<a class="contact-links" href="https://github.com/Michaelsulistio">{ github }</a><br>
+					<a class="contact-links" href="https://www.linkedin.com/in/michael-sulistio-288b28132/">{ linkedin }</a><br>
+					<a class="contact-links" href="https://www.instagram.com/mikesoolistio/">{ instagram }</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+	    $(document).ready(function() {
+	    		$('.container').hide().fadeIn('slow');
+	    	});
+	</script>
+	<script>
+
+		$("#about-link").click(function() {
+	    	$('html, body').animate({
+		        scrollTop: $("#about-block").offset().top
+		    }, 1000);
+		});
+		$("#projects-link").click(function() {
+	    	$('html, body').animate({
+		        scrollTop: $("#projects-block").offset().top
+		    }, 1000);
+		});
+
+		$("#contact-link").click(function() {
+	    	$('html, body').animate({
+		        scrollTop: $("#contact-block").offset().top
+		    }, 1000);
+		});
+	</script>
   </body>
 </html>

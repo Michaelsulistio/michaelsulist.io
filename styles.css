@@ -1,10 +1,12 @@
-body {
+#intro-block {
 	/* Potential Colors:
 	 * SlateGray - #374049
  	 * LightSlateGray
  	 * DimGray
  	 */
- 	 background-color: #374049;
+ 	 background-color: black;
+ 	 padding-bottom: 355px;
+
 
 }
 /* index.html attributes */
@@ -16,31 +18,36 @@ body {
 	padding-bottom: 20px;
 	text-align: center;
 }
-.link-container {
+#link-container {
 	text-align: center;
-	font-size: 150%;
+	font-size: 130%;
 }
-.about-link {
-	color: #64FF91;
+#about-link {
+	color: #54E86B;
 }
-.projects-link {
-	color: #FF71FF;
+#projects-link {
+	color: #5CD2FF;
+	/* FFF669  5CD2FF*/
 }
-
-.resume-link {
-	color: #FFFD71;
+#contact-link {
+	color: #FFF669;
 }
 
 /* about.html attributes */
+#about-block {
+	background-color: #397FB2;
+	padding-bottom: 30px;
+}
 .about-title {
 	color: white;
-	font-size 150%;
-	font-family: 'Oxygen Mono', monospace;
+	font-size: 200%;
+	font-family: 'Raleway', sans-serif;
 	padding-top: 25px;
 	text-align: center;
 }
 .about-text {
 	color: white;
+	font-family: 'Raleway', sans-serif;
 	margin-top:10px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -52,8 +59,65 @@ body {
 	height: 2px;
 	margin: auto;
 }
+#line-1 {
+	background:#3EAB4F;
+}
+
 
 /* projects.html attributes */
+#projects-block {
+	background-color: #337F7A;
+	padding-bottom: 30px;
+}
+#projects-title {
+	color: white;
+	font-size: 200%;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.project-title {
+	color: white;
+	font-size: 140%;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+}
+.project-text {
+	color: white;
+	font-size: 90%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom:20px;
+}
+.img-text {
+	margin-bottom: 25px;
+}
 /*.about-text:hover, .projects-text:hover, .resume-text:hover {
 	box-shadow: 0 0 30px gray;
 } Box shadows for project images */
+
+/* contact attributes */
+#contact-block {
+	background-color: #CCC4A9;
+	padding-bottom:30px;
+	text-align: center;
+}
+#contact-title {
+	color: white;
+	font-size: 200%;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#contact-text {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 30px;
+}
+
+.contact-links {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 20px;
+}
